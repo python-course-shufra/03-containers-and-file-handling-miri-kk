@@ -100,7 +100,7 @@ def get_professions(name):
     for student in classroom:
         if name == student['name']:
             new_profession=[]
-            for i in student.grades:
+            for i in student.grade:
                 new_profession.append(i)
     return new_profession
 
