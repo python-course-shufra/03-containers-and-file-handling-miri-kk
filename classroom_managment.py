@@ -42,7 +42,7 @@ def add_student(name, email=None):
              in lowercase, you can use the `s.lower()` method
     'grade': initialize with empty list
     """
-    student = {"name":name, "grade":[]}
+    student = {"name":name, "grades":[]}
     student ["email"]=email or f'{name.lower()}@example.com'
     classroom.append(student)
     pass
@@ -50,6 +50,7 @@ def add_student(name, email=None):
 
 def delete_student(name):
     """Delete a student from the classroom"""
+    global classroom
     filtered_classroom = []
     for student in classroom:
         if name != student['name']:
