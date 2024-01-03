@@ -42,7 +42,7 @@ def add_student(name, email=None):
              in lowercase, you can use the `s.lower()` method
     'grade': initialize with empty list
     """
-    student = {"name":name, "grades":[]}
+    student = {"name":name, "grade":[]}
     student ["email"]=email or f'{name.lower()}@example.com'
     classroom.append(student)
     pass
@@ -87,7 +87,7 @@ def avg_grade(name, profession):
                 count=0
                 sum_grade=0
                 for grade in profession:
-                   sum_grade=sum_grade+grade
+                   sum_grade+=grade
                    count+=1
     return (float) (sum_grade/count)
                 
