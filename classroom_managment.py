@@ -87,7 +87,7 @@ def avg_grade(name, profession):
                 count=0
                 sum_grade=0
                 for grade in profession:
-                   sum_grade+=grade
+                   sum_grade+=student.grade
                    count+=1
     return (float) (sum_grade/count)
                 
