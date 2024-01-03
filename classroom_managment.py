@@ -87,7 +87,7 @@ def avg_grade(name, profession):
                 count=0
                 sum_grade=0
                 for grade in profession:
-                   sum_grade+=student.grade
+                   sum_grade+=student['grades']
                    count+=1
     return (float) (sum_grade/count)
                 
@@ -100,7 +100,7 @@ def get_professions(name):
     for student in classroom:
         if name == student['name']:
             new_profession=[]
-            for i in student.grade:
+            for i in student['grades']:
                 new_profession.append(i)
     return new_profession
 
