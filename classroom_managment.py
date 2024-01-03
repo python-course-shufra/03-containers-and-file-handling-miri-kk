@@ -73,7 +73,7 @@ def add_grade(name, profession, grade):
     """Adds a new grade to the student grades"""
     for student in classroom:
         if name == student['name']:
-            student.grades.Add(profession, grade)
+            student.grade.Add(profession, grade)
 
     pass
 
